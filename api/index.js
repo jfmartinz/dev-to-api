@@ -6,7 +6,11 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Enable CORS for all origins
-app.use(cors());
+app.use(
+	cors({
+		origin: 'https://dev-to-api-liard.vercel.app', // Only allow requests from your frontend
+	})
+);
 
 app.get('/api/dev-blogs', async (req, res) => {
 	const username = 'jfmartinz';
