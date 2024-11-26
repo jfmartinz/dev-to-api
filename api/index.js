@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3001;
 // Enable CORS for all origins
 app.use(
 	cors({
-		origin: 'https://www.jfmartinz.dev/', // Only allow requests from your frontend
+		origin: 'https://www.jfmartinz.dev', // Only allow requests from your frontend
 	})
 );
 
