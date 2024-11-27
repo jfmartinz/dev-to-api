@@ -5,7 +5,7 @@ const axios = require('axios');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Enable CORS for all origins
+// Enable CORS
 app.use(
 	cors({
 		origin: 'https://www.jfmartinz.dev', // Only allow requests from your frontend
